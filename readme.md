@@ -23,3 +23,18 @@ Id  Name                Grades
 196 Luigi Grimaldello       68
 102 Piero della Francesca   50
 120 Francesca da Polenta    84
+
+
+-------------------------------------------------------
+1.
+scrivo la, lista degli invitati 
+mi preparo il contenitore dei miei oggetti letterali
+con un ciclo forEach ciclo l'elemento e l'indice della lista degli invitati
+aggiungo proprietà e contenuto al nuovo oggetto letterale e lo inserisco nel contenitore dei miei opggetti letterali
+
+
+2.
+creo l'elenco degli studenti
+creo 3 contenitori per nomi degli studenti, gli studenti con voto 70+ e un'altro per 70+ e id > 120
+
+creo un ciclo for in e inserisco con degli if nei contenitori specifici
