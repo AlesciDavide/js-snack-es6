@@ -15,8 +15,6 @@ nomiInvitati.forEach((elemento, indice) => {
 })
 console.log(segnaposto);
 
-
-
 /* esercizio 2 */
 
 const elencoStudenti = [
@@ -57,7 +55,6 @@ const elencoStudenti = [
     },
 ]
 
-
 let nomeStudenti = [];
 let studentiSettanta = [];
 let studentiIdPlus = [];
@@ -65,10 +62,9 @@ let studentiIdPlus = [];
 for (const key in elencoStudenti) {
     let upperCase = elencoStudenti[key].name.toUpperCase();
     nomeStudenti.push(upperCase);
-    
     if(elencoStudenti[key].grades > 70){
         studentiSettanta.push(elencoStudenti[key]);
-    };
+    }
     if(elencoStudenti[key].id > 120 && elencoStudenti[key].grades > 70){
         studentiIdPlus.push(elencoStudenti[key]);
     }
@@ -77,6 +73,3 @@ for (const key in elencoStudenti) {
 console.log(nomeStudenti);
 console.log(studentiSettanta);
 console.log(studentiIdPlus);
-
-
-/* nomeStudenti.push(studente.name.toUpperCase()); */
