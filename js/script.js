@@ -4,3 +4,16 @@ const nomiInvitati = [ 'Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronal
 
 const segnaposto = [];
 
+nomiInvitati.forEach((elemento, indice) => {
+    let oggettoInvitati = {};
+    oggettoInvitati.tableName = "Tavolo Vip";
+    oggettoInvitati.guestName = elemento;
+    oggettoInvitati.place = indice + 1;
+    
+    segnaposto.push(oggettoInvitati);
+
+})
+console.log(segnaposto);
+
+
+
