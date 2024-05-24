@@ -18,8 +18,20 @@ function generateNumberRandom(){
     return num;
 };
 
+/* li inserisco nell'array */
 for (const key in squadreCalcio) {
     squadreCalcio[key].puntiFatti = generateNumberRandom();
     squadreCalcio[key].falliSubiti = generateNumberRandom();
 }
 console.log(squadreCalcio);
+
+const nomiFalli = [];
+for(let i = 0; i< squadreCalcio.length; i++){
+    const {nome, falliSubiti} = squadreCalcio[i];
+    let oggettoNuovo = {};
+    oggettoNuovo.nome = nome;
+    oggettoNuovo.falliSubiti = falliSubiti;
+    
+    nomiFalli.push(oggettoNuovo);
+}
+console.log(nomiFalli);
