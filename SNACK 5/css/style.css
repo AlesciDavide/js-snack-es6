@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: bisque;
+}
+section#container{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.card{
+    width: calc((100% / 3) - 2rem);
+    aspect-ratio: 1/1;
+    margin: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    background-color: white;
+}

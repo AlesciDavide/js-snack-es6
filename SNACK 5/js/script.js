@@ -1,3 +1,5 @@
+const sectionEl = document.querySelector('section#container');
+
 const articoli = [
     {
         name: "Poppy",
@@ -40,3 +42,17 @@ for(let i = 0; i < articoli.length; i++){
     articoliCartellini.push(oggettoNuovo);
 }
 console.log(articoliCartellini);
+console.log(articoliCartellini[0].name);
+
+let divCardEl = document.createElement('div');
+divCardEl.classList.add('card');
+sectionEl.appendChild(divCardEl);
+
+for(let i= 0; i < articoliCartellini.length; i++){
+        let pEl = document.createElement('p');
+        pEl.append(`${articoliCartellini[i].name} ${articoliCartellini[i].type} ${articoliCartellini[i].color} ${articoliCartellini[i].position}`);
+        /*  pEl.append(`${articoliCartellini[i].type}`);
+        pEl.append(`${articoliCartellini[i].color}`);
+        pEl.append(`${articoliCartellini[i].position}`); */
+        divCardEl.appendChild(pEl);
+};
