@@ -42,7 +42,7 @@ for(let i = 0; i < articoli.length; i++){
     articoliCartellini.push(oggettoNuovo);
 }
 console.log(articoliCartellini);
-console.log(articoliCartellini[0].name);
+
 
 let divCardEl = document.createElement('div');
 divCardEl.classList.add('card');

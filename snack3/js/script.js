@@ -12,13 +12,14 @@ const biciclette = [
     { nome: "Colnago V3Rs", peso: 7.0 }
 ];
 
-let peso = 10;
+let peso = biciclette[0].peso;
 
-for (const key in biciclette) {
-    if(biciclette[key].peso < peso){
-        peso = biciclette[key].peso;
+for (const bicicletta of biciclette) {
+    if(bicicletta.peso < peso){
+        peso = bicicletta.peso;
     }
 }
+
 for (const key in biciclette) {
     if (biciclette[key].peso == peso) {
         const {nome, peso} = biciclette[key];

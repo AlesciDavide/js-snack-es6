@@ -19,9 +19,9 @@ function generateNumberRandom(){
 };
 
 /* li inserisco nell'array */
-for (const key in squadreCalcio) {
-    squadreCalcio[key].puntiFatti = generateNumberRandom();
-    squadreCalcio[key].falliSubiti = generateNumberRandom();
+for (const squadracalcio of squadreCalcio) {
+    squadracalcio.puntiFatti = generateNumberRandom();
+    squadracalcio.falliSubiti = generateNumberRandom();
 }
 console.log(squadreCalcio);
 
